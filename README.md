@@ -49,21 +49,27 @@ Check for missing values and handle them appropriately.
 Train Model:
 Use the script below to train the Linear Regression model:
 
+Importing Libraries
+
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
 Features and Target
+
 features = final_df[['Sentiment', 'Volume', 'Open', 'High', 'Low']]
 target = final_df['Adj Close']
 
 Split Data
+
 X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
 
 Train Model
+
 model = LinearRegression()
 model.fit(X_train, y_train)
 
 Evaluate
+
 predictions = model.predict(X_test)
 print(predictions)
 
@@ -76,10 +82,15 @@ Pass new data to the trained model to predict stock prices.
 ## 🔑 Key Results
 Result Metric	Linear Regression
 R^2 Score:	0.998	
+
 MSE:	1.05	
+
 MAE:	0.71	
+
 Accuracy: 1.0
+
 Precision: 1.0
+
 F1 Score: 1.0
 
 ## 💻 Technologies Used
