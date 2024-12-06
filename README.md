@@ -28,11 +28,11 @@ Linear Regression
 Simple and interpretable model for regression tasks.
 
 Metrics:
-R^2 Score: 0.998//
-MSE: 1.05//
-MAE: 0.71//
-Accuracy: 1.0//
-Precision: 1.0//
+R^2 Score: 0.998\\
+MSE: 1.05\\
+MAE: 0.71\\
+Accuracy: 1.0\\
+Precision: 1.0\\
 F1 Score: 1.0
 
 ## 🛠️ How to Run
@@ -47,22 +47,22 @@ Use the script below to train the Linear Regression model:
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-# Features and Target
+Features and Target
 features = final_df[['Sentiment', 'Volume', 'Open', 'High', 'Low']]
 target = final_df['Adj Close']
 
-# Split Data
+Split Data
 X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
 
-# Train Model
+Train Model
 model = LinearRegression()
 model.fit(X_train, y_train)
 
-# Evaluate
+Evaluate
 predictions = model.predict(X_test)
 print(predictions)
-Evaluate Model:
 
+Evaluate Model:
 Use metrics such as MSE, MAE, and R^2 to assess performance.
 
 Make Predictions:
