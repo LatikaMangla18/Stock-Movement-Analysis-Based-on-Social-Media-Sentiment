@@ -6,7 +6,7 @@ This project aims to predict stock price movements using machine learning models
 Sentiment Analysis: Combines sentiment data from Telegram (using Telethon Library) with stock price data.
 Historical Stock Data Analysis: To take historical data imported yfinance from python. Utilizes attributes such as Date, open, high, low, close prices, volume, and sentiment scores.
 Model: Implements machine learning model and calculated its accuracy and performance.
-Key Metrics: Evaluates model performance using metrics like Mean Squared Error (MSE), Mean Absolute Error (MAE), and R^2 score.
+Key Metrics: Evaluates model performance using metrics like Mean Squared Error (MSE), Mean Absolute Error (MAE), R<sup>2</sup> , Accuracy, Precision, F1-Score score.
 Predictive Capabilities: Provides insights into future stock price movements.
 
 ## 📂 Dataset
@@ -32,7 +32,7 @@ Train Model:
 To train a Linear Regression model, the necessary libraries are imported, and features (Sentiment, Volume, Open, High, Low) and the target (Adj Close) are defined from final_df. The data is split into training (80%) and testing (20%) sets using train_test_split with a fixed random state for reproducibility. A LinearRegression model is then trained on the training set and used to predict Adj Close values for the test set, with the predictions printed for evaluation.
 
 Evaluate Model:
-Use metrics such as MSE, MAE, R^2, Accuracy, Precision, F1-score to assess performance.
+Use metrics such as MSE, MAE, R<sup>2</sup>, Accuracy, Precision, F1-score to assess performance.
 
 Make Predictions:
 Pass new data to the trained model to predict stock prices.
@@ -51,6 +51,8 @@ Accuracy: 1.0
 Precision: 1.0
 
 F1 Score: 1.0
+
+
 <img width="590" alt="image" src="https://github.com/user-attachments/assets/3ffd4b33-9345-4c3c-9616-f497cdd6c4eb">
 
 
