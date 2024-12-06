@@ -10,8 +10,8 @@ api_hash = '2919605a4a10532744215edebefc5a46'  # API Hash from your configuratio
 client = TelegramClient('session_name', api_id, api_hash)
 
 # Define the channel name and the CSV file name
-channel_name = 'GreenwaveTech'  # Replace with the actual channel name
-csv_filename = 'telegram_channel_messages1.csv'
+channel_name = 'stockmarketupdates4'  # Replace with the actual channel name
+csv_filename = 'telegram_channel_messages3.csv'
 
 async def main():
     # Start the client
