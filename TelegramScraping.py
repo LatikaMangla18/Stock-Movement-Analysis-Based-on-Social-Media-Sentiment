@@ -3,8 +3,8 @@ from telethon import TelegramClient
 import asyncio
 
 # Replace with your own API ID and API Hash
-api_id = '21371851'  # API ID from your configuration
-api_hash = '2919605a4a10532744215edebefc5a46'  # API Hash from your configuration
+api_id = 'Add API_ID'  # API ID from your configuration
+api_hash = 'Add Hash_Id'  # API Hash from your configuration
 
 # Create the Telegram client
 client = TelegramClient('session_name', api_id, api_hash)
