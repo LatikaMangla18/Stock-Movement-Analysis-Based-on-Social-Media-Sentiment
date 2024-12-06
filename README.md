@@ -28,11 +28,11 @@ Linear Regression
 Simple and interpretable model for regression tasks.
 
 Metrics:
-R^2 Score: 0.998
-MSE: 1.05
-MAE: 0.71
-Accuracy: 1.0
-Precision: 1.0
+R^2 Score: 0.998//
+MSE: 1.05//
+MAE: 0.71//
+Accuracy: 1.0//
+Precision: 1.0//
 F1 Score: 1.0
 
 ## 🛠️ How to Run
