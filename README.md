@@ -4,9 +4,12 @@ This project aims to predict stock price movements using machine learning models
 
 ## 🚀 Features
 Sentiment Analysis: Combines sentiment data from Telegram (using Telethon Library) with stock price data.
+
 Historical Stock Data Analysis: To take historical data imported yfinance from python. Utilizes attributes such as Date, open, high, low, close prices, volume, and sentiment scores.
+
 Model: Implements machine learning model and calculated its accuracy and performance.
 Key Metrics: Evaluates model performance using metrics like Mean Squared Error (MSE), Mean Absolute Error (MAE), R<sup>2</sup> , Accuracy, Precision, F1-Score score.
+
 Predictive Capabilities: Provides insights into future stock price movements.
 
 ## 📂 Dataset
@@ -58,18 +61,23 @@ F1 Score: 1.0
 
 ## 💻 Technologies Used
 Programming Language: Python
+
 Libraries: Scikit-learn, Pandas, NumPy, Matplotlib/Seaborn for visualization
 
 ## 📝 Future Scope
 Incorporate deep learning models like LSTMs for time-series analysis.
+
 Expand the sentiment analysis pipeline using natural language processing (NLP) techniques.
+
 Explore additional stock market indicators for feature enhancement.
 
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! Please create a pull request or raise an issue for any feature suggestions or bug fixes.
 
-📞 Contact
+## 📞 Contact
 Author: Latika Mangla
+
 Email: latikamangla18@gmail.com
+
 GitHub: 
