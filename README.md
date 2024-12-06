@@ -21,24 +21,6 @@ Historical stock prices for the selected ticker (e.g., AAPL).
 Merged Dataset:
 Combines sentiment data and stock data using the Date column.
 
-## ⚙️ Installation
-
-📊 Implemented Model
-Linear Regression
-Simple and interpretable model for regression tasks.
-
-Metrics:
-R^2 Score: 0.998
-
-MSE: 1.05
-
-MAE: 0.71
-
-Accuracy: 1.0
-
-Precision: 1.0
-
-F1 Score: 1.0
 
 ## 🛠️ How to Run
 
@@ -47,40 +29,17 @@ Ensure both sentiment and stock data are cleaned and merged.
 Check for missing values and handle them appropriately.
 
 Train Model:
-Use the script below to train the Linear Regression model:
-
-Importing Libraries
-
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-
-Features and Target
-
-features = final_df[['Sentiment', 'Volume', 'Open', 'High', 'Low']]
-target = final_df['Adj Close']
-
-Split Data
-
-X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
-
-Train Model
-
-model = LinearRegression()
-model.fit(X_train, y_train)
-
-Evaluate
-
-predictions = model.predict(X_test)
-print(predictions)
+To train a Linear Regression model, the necessary libraries are imported, and features (Sentiment, Volume, Open, High, Low) and the target (Adj Close) are defined from final_df. The data is split into training (80%) and testing (20%) sets using train_test_split with a fixed random state for reproducibility. A LinearRegression model is then trained on the training set and used to predict Adj Close values for the test set, with the predictions printed for evaluation.
 
 Evaluate Model:
-Use metrics such as MSE, MAE, and R^2 to assess performance.
+Use metrics such as MSE, MAE, R^2, Accuracy, Precision, F1-score to assess performance.
 
 Make Predictions:
 Pass new data to the trained model to predict stock prices.
 
 ## 🔑 Key Results
-Result Metric	Linear Regression
+Result Metric	Linear Regression:
+
 R^2 Score:	0.998	
 
 MSE:	1.05	
@@ -92,6 +51,8 @@ Accuracy: 1.0
 Precision: 1.0
 
 F1 Score: 1.0
+<img width="590" alt="image" src="https://github.com/user-attachments/assets/3ffd4b33-9345-4c3c-9616-f497cdd6c4eb">
+
 
 ## 💻 Technologies Used
 Programming Language: Python
